@@ -1,0 +1,5 @@
+pandas
+load_dotenv
+httpx
+pydantic
+backoff
