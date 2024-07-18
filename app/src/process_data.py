@@ -66,7 +66,7 @@ async def process_book(book_name: str):
 
     # Create the directory structure
     output_dir = os.path.join(
-        "./data",
+        "../data",
         f"book={book_name}",
         f"year={year}",
         f"month={month:02d}",

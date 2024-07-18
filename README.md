@@ -54,7 +54,7 @@ To get started with the `de_challenge` project, follow these steps:
 3. Run the Docker container by executing the following command:
 
    ```
-    docker run --env-file /home/ubuntu/de_challenge/.env -v /home/ubuntu/de_challenge/data:/app/data de_challenge
+    docker run --env-file /home/ubuntu/de_challenge/.env -v /home/ubuntu/de_challenge/data:/data de_challenge
    ```
 
    Replace `/home/ubuntu/de_challenge/data` with the path to the data directory on your local machine.
