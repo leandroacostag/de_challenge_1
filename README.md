@@ -38,7 +38,7 @@ To get started with the `de_challenge` project, follow these steps:
 
 6. Run the following command to execute the project:
    ```
-   python -m app/main.py
+   python app/main.py
    ```
 
 ## Run on Docker
