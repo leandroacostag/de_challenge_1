@@ -1,10 +1,10 @@
 # README
 
-To get started with the `de_challenge` project, follow these steps:
+To get started with the `de_challenge_1` project, follow these steps:
 
 ## Run Locally
 
-1. Open a terminal and navigate to the project directory: `/home/ubuntu/de_challenge/`
+1. Open a terminal and navigate to the project directory: `/home/ubuntu/de_challenge_1/`
 
 2. Activate the project environment. Depending on your operating system, you can use either `venv` or `conda`:
 
@@ -14,7 +14,7 @@ To get started with the `de_challenge` project, follow these steps:
      ```
    - For `conda`, run:
      ```
-     conda create -n de_challenge
+     conda create -n de_challenge_1
      ```
 
 3. Activate the project environment. Depending on your operating system, you can use either `venv` or `conda`:
@@ -25,7 +25,7 @@ To get started with the `de_challenge` project, follow these steps:
      ```
    - For `conda`, run:
      ```
-     conda activate de_challenge
+     conda activate de_challenge_1
      ```
 
 4. Install the project dependencies by running the following command:
@@ -43,25 +43,25 @@ To get started with the `de_challenge` project, follow these steps:
 
 ## Run on Docker
 
-1. Open a terminal and navigate to the project directory: `/home/ubuntu/de_challenge/`
+1. Open a terminal and navigate to the project directory: `/home/ubuntu/de_challenge_1/`
 
 2. Build the Docker image by running the following command:
 
    ```
-   docker build -t de_challenge .
+   docker build -t de_challenge_1 .
    ```
 
 3. Run the Docker container by executing the following command:
 
    ```
-    docker run --env-file /home/ubuntu/de_challenge/.env -v /home/ubuntu/de_challenge/data:/data de_challenge
+    docker run --env-file /home/ubuntu/de_challenge_1/.env -v /home/ubuntu/de_challenge_1/data:/data de_challenge_1
    ```
 
-   Replace `/home/ubuntu/de_challenge/data` with the path to the data directory on your local machine.
+   Replace `/home/ubuntu/de_challenge_1/data` with the path to the data directory on your local machine.
 
 ## Partitioning of the data
 
-For partitioning the data in the `de_challenge` we use the following directory structure:
+For partitioning the data in the `de_challenge_1` we use the following directory structure:
 
 ```
 /book=book_name/year=year/month=month/day=day/hour=hour/minute=minute/order_book.csv
