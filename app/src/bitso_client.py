@@ -4,7 +4,7 @@ import logging
 import time
 
 # Local imports
-from config import bitso_api_key, bitso_api_secret, bitso_api_url
+from config import bitso_api_url
 from models import OrderBook
 
 logger = logging.getLogger(__name__)
@@ -12,8 +12,6 @@ logger = logging.getLogger(__name__)
 
 class BitsoApiClient:
     def __init__(self):
-        self.api_key = bitso_api_key
-        self.api_secret = bitso_api_secret
         self.api_url = bitso_api_url
 
     async def _request(self, endpoint: str, method: str, body: dict = None):

@@ -36,6 +36,9 @@ To get started with the `de_challenge_1` project, follow these steps:
 
 5. Rename the `.env.example` file to `.env` and update the environment variables as needed.
 
+   - `BITSO_API_URL`: The URL of the Bitso API.
+   - `LOGS_LEVEL`: Set the logging level to `DEBUG` if you want to see detailed logs. Otherwise, set it to `INFO`.
+
 6. Run the following command to execute the project:
    ```
    python app/main.py
