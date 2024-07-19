@@ -6,6 +6,7 @@ import logging
 
 # Local imports
 from src.bitso_client import BitsoApiClient
+from config import data_path
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +19,7 @@ async def process_book(book_name: str):
     # (orderbook_timestamp: string, book: string, bid :float, ask: float, spread: float)
     output = []
 
-    for i in range(600):  # Loop to run 600 times (10 minutes with 1-second intervals)
+    for i in range(5):  # Loop to run 600 times (10 minutes with 1-second intervals)
         request_start_time = time.time()  # Record the start time
 
         # Get the order book
@@ -66,7 +67,7 @@ async def process_book(book_name: str):
 
     # Create the directory structure
     output_dir = os.path.join(
-        "../data",
+        data_path,
         f"book={book_name}",
         f"year={year}",
         f"month={month:02d}",

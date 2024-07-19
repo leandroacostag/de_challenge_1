@@ -57,10 +57,10 @@ To get started with the `de_challenge_1` project, follow these steps:
 3. Run the Docker container by executing the following command:
 
    ```
-    docker run --env-file /home/ubuntu/de_challenge_1/.env -v /home/ubuntu/de_challenge_1/data:/data de_challenge_1
+    docker run --env-file /home/ubuntu/de_challenge_1/.env -v /home/ubuntu/de_challenge_1/data:/home/ubuntu/de_challenge_1/data de_challenge_1
    ```
 
-   Replace `/home/ubuntu/de_challenge_1/data` with the path to the data directory on your local machine.
+   Replace `/home/ubuntu/de_challenge_1/data` with your local path to the `data` directory. This has to be alligned with the path in the `.env` file.
 
 ## Partitioning of the data
 
